@@ -31,13 +31,13 @@ Each team should be totally independent of the other team. The teams should be c
 
 - Trying to support sessions adds a lot of extra unwanted complexity. I would strongly recommend to totally move to a stateless, based on token security, approach. **sessions should not be used** instead focus on defining a well established stateless based on Oauth2 token.
 
-# Testing and QA
+## Testing and QA
 
 Important to mention that there are some very important rules based on statistics regarding Test Driven Development(TDD). TDD is really controversial even among experts. Check, for instance, this 2 very nice articles that take opposite opinions about TDD.
 
-Tests are really important but there's a catch there, the mentality of trying to cover as much as possible of your source code with all types of tests is really an unnecessary burden and delay to your project that doesn't add much in quality instead the  best approach is to understand each scenario and write the appropriate types of tests for it. See this article from Elliot <https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.dvs85rjln>
+Tests are really important but there's a catch there, the mentality of trying to cover as much as possible of your source code with all types of tests is really an unnecessary burden and delay to your project that doesn't add much in quality instead the  best approach is to understand each scenario and write the appropriate types of tests for it. See [this article from Erick Elliot](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.dvs85rjln)
 
-## Build mocks / stubs
+### Build mocks / stubs
 
 - Build mocks and even better stubs(capable of supporting Behaviour Testing Design). This is really key as Building microservices can get a lot complex if you can't mock / stub the edges, with the spread of services you run on the risk of havving to spin up many of them together to be in a state where you can execute tests.
 
