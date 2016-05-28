@@ -4,7 +4,7 @@ This is probably one of the most important things to define before starting to c
 
 # Team composition and approach
 
-Each team should be totally independent of the other team. The teams should be created around microservices and preferentially the teams should be together or as close as possible from each other so they can share their own practices and approach to solve problems inspired by the high level architecture and guidelines.
+Each team should be totally independent of other teams. The teams should be created to fit a  micro services implementation and preferentially the teams should be together or as close as possible from each other so they can share their own good practices and approach to solve problems inspired by the high level architecture and guidelines.
 
 # Lessons learned
 
@@ -33,9 +33,9 @@ Each team should be totally independent of the other team. The teams should be c
 
 # Testing and QA
 
-Important to mention that there are some very important rules based on statistics regarding Test Driven Development(TDD). TDD is really controversial even among experts. Check, for instance, this 2 very nice articles that take opposite opinions about TDD.
+Important to mention that there are some very important rules based on statistics regarding Test Driven Development(TDD). TDD is really controversial even among experts. Check, for instance, this 2 very nice articles that take opposite opinions about TDD a favorable one [from Uncle Bob](http://blog.cleancoder.com/uncle-bob/2016/03/19/GivingUpOnTDD.html?utm_content=bufferf7395&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer) and a different opinion [from Ian Sommerville](http://iansommerville.com/systems-software-and-technology/giving-up-on-test-first-development/?utm_content=buffera712a&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer).
 
-Tests are really important but there's a catch there, the mentality of trying to cover as much as possible of your source code with all types of tests is really an unnecessary burden and delay to your project that doesn't add much in quality instead the  best approach is to understand each scenario and write the appropriate types of tests for it. See this article from Elliot <https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.dvs85rjln>
+Tests are really important but there's a catch there, the mentality of trying to cover as much as possible of your source code with all types of tests is really an unnecessary burden and delay to your project that doesn't add much in quality, instead the  best approach is to understand each scenario and write the appropriate types of tests for it. See this great article from Eric Elliot for a better understanding of what I am recommending here: <https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.dvs85rjln>
 
 ## Build mocks / stubs
 
@@ -56,6 +56,8 @@ Tests are really important but there's a catch there, the mentality of trying to
 # CI / CD
 
 # Repositories
+
+Organization of repos is another very important thing to consider. It's very important that a CD pipeline is build and the recommendation here is to have each microservice in it's own repository and whenever there's a new commit of code to the master branch of development a pipeline is triggered that will then Compile -> Test -> Release that specific build of your micro service.
 
 # Development
 
